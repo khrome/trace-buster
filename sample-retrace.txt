@@ -1,0 +1,44 @@
+Stack id 986542 resolved.
+   at http://localhost:7357/assets/vendor.js:98494:26
+      at replenish (http://localhost:7357/assets/vendor.js:106220:17)
+                      iteratee(elem.value, elem.key, onlyOnce(iterateeCallback));
+                      ^                                                          
+   
+
+      at http://localhost:7357/assets/vendor.js:106225:9
+      at eachOfLimit (http://localhost:7357/assets/vendor.js:106250:24)
+          _eachOfLimit(limit)(coll, wrapAsync(iteratee), callback);
+                             ^                                     
+   
+
+      at Object.<anonymous> (http://localhost:7357/assets/vendor.js:106255:16)
+              return fn(iterable, limit, iteratee, callback);
+                     ^                                       
+   
+
+      at bustTrace (http://localhost:7357/assets/vendor.js:98492:11)
+          asynk.eachOfSeries(lines, function(line, index, done){
+                ^                                               
+   
+
+      at Heirarchy.Node.activate (http://localhost:7357/assets/vendor.js:98577:61)
+        console.log('HN ACTIVATE', this.id, this.children.length, bustTrace((new Error()).stack, request));
+                                                                  ^                                        
+   
+
+      at Class.setHeirarchyNode (http://localhost:7357/assets/dummy.js:471:26)
+                          node.activate();
+                               ^          
+   
+
+      at Class.mod.<computed> (http://localhost:7357/assets/dummy.js:176:43)
+                          res = hooks[hookName].apply(this, arguments);
+                                                ^                      
+   
+
+      at Class.superWrapper (http://localhost:7357/assets/vendor.js:55285:22)
+            var ret = func.apply(this, arguments);
+                           ^                      
+   
+
+      
